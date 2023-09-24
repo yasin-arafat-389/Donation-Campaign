@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/0GVWt0m/Health.png",
+    "category": "Health",
+    "title": "Support Medical Research",
+    "description": "Donate to fund critical medical research projects aimed at finding cures for diseases and improving healthcare worldwide.",
+    "category_bg_color": "#0052ff33",
+    "category_title_color": "0052FF",
+    "category_card_bg_color": "#0052ff26",
+    "donate_button_color": "#FF444A"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/4jf0KTM/Education.png",
+    "category": "Education",
+    "title": "Provide Scholarships",
+    "description": "Help underprivileged students access quality education by providing scholarships and educational resources.",
+    "category_bg_color": "#ff444a33",
+    "category_title_color": "#FF444A",
+    "category_card_bg_color": "#ff444a26",
+    "donate_button_color": "#3498DB"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/cgBSZR4/Food.png",
+    "category": "Food",
+    "title": "Fight Hunger",
+    "description": "Support food banks and organizations working to eliminate hunger and provide nutritious meals to those in need.",
+    "category_bg_color": "#f8714733",
+    "category_title_color": "#F87147",
+    "category_card_bg_color": "#f8714726",
+    "donate_button_color": "#27AE60"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/HpRGY8v/Clothing.png",
+    "category": "Clothing",
+    "title": "Warm Clothing Drive",
+    "description": "Contribute to a clothing drive to provide warm clothing to individuals facing harsh weather conditions.",
+    "category_bg_color": "#79c23f33",
+    "category_title_color": "#79C23F",
+    "category_card_bg_color": "#79c23f26",
+    "donate_button_color": "#FFC300"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/4jf0KTM/Education.png",
+    "category": "Education",
+    "title": "Digital Learning Initiative",
+    "description": "Enable remote learning opportunities for students in underserved areas by supporting digital education programs.",
+    "category_bg_color": "#ff444a33",
+    "category_title_color": "#FF444A",
+    "category_card_bg_color": "#ff444a26",
+    "donate_button_color": "#3498DB"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/0GVWt0m/Health.png",
+    "category": "Health",
+    "title": "Support Pediatric Care",
+    "description": "Help children receive the medical care they need by donating to pediatric healthcare programs and hospitals.",
+    "category_bg_color": "#0052ff33",
+    "category_title_color": "0052FF",
+    "category_card_bg_color": "#0052ff26",
+    "donate_button_color": "#FF444A"
+  },
+
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/HpRGY8v/Clothing.png",
+    "category": "Clothing",
+    "title": "Winter Clothing Drive",
+    "description": "Collect warm clothing items to distribute to homeless and low-income individuals during the winter season.",
+    "category_bg_color": "#79c23f33",
+    "category_title_color": "#79C23F",
+    "category_card_bg_color": "#79c23f26",
+    "donate_button_color": "#FFC300"
+  },
+
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/0GVWt0m/Health.png",
+    "category": "Health",
+    "title": "Support Mental Health",
+    "description": "Donate to mental health organizations and initiatives working to raise awareness and provide support to those in need.",
+    "category_bg_color": "#0052ff33",
+    "category_title_color": "0052FF",
+    "category_card_bg_color": "#0052ff26",
+    "donate_button_color": "#FF444A"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/cgBSZR4/Food.png",
+    "category": "Food",
+    "title": "Meals for the Homeless",
+    "description": "Provide hot meals and essential supplies to homeless individuals in your community.",
+    "category_bg_color": "#f8714733",
+    "category_title_color": "#F87147",
+    "category_card_bg_color": "#f8714726",
+    "donate_button_color": "#27AE60"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/4jf0KTM/Education.png",
+    "category": "Education",
+    "title": "STEM Education Programs",
+    "description": "Empower students with STEM education opportunities to foster innovation and technological advancement.",
+    "category_bg_color": "#ff444a33",
+    "category_title_color": "#FF444A",
+    "category_card_bg_color": "#ff444a26",
+    "donate_button_color": "#3498DB"
+  },
+
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/HpRGY8v/Clothing.png",
+    "category": "Clothing",
+    "title": "School Uniform Drive",
+    "description": "Donate school uniforms to help children from low-income families attend school with dignity.",
+    "category_bg_color": "#79c23f33",
+    "category_title_color": "#79C23F",
+    "category_card_bg_color": "#79c23f26",
+    "donate_button_color": "#FFC300"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/cgBSZR4/Food.png",
+    "category": "Food",
+    "title": "Community Gardens",
+    "description": "Support community garden initiatives to promote sustainable agriculture and access to fresh, healthy food.",
+    "category_bg_color": "#f8714733",
+    "category_title_color": "#F87147",
+    "category_card_bg_color": "#f8714726",
+    "donate_button_color": "#27AE60"
+  }
+]
