@@ -11,7 +11,7 @@ const CardDetails = () => {
     if (!myDonates) {
       saveToLocalDb.push(donate);
       localStorage.setItem("donates", JSON.stringify(saveToLocalDb));
-      swal("Good job!", "You clicked the button!", "success");
+      swal("Great job!", "Thanks for your donation", "success");
     } else {
       saveToLocalDb.push(...myDonates, donate);
       localStorage.setItem("donates", JSON.stringify(saveToLocalDb));

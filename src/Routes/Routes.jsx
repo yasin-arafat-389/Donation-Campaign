@@ -2,14 +2,15 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Donation from "../Pages/Donation/Donation";
-import Statistics from "../Pages/Statistics/Statistics";
 import CardDetails from "../Pages/CardDetails/CardDetails";
+import Statistics from "../Pages/Statistics/Statistics";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <div>Error</div>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+        loader: () => fetch("../Data.json"),
       },
       {
         path: "/details/:id",
