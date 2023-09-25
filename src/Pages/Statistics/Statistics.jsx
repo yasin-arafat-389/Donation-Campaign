@@ -87,11 +87,11 @@ const Statistics = () => {
       <div className="yourDonation text-center flex justify-center gap-12">
         <div className="flex  items-center gap-3">
           <h1>Your Donation</h1>
-          <div className="h-3 w-10 bg-[#8884D8]"></div>
+          <div className="h-3 w-10 bg-[#FF444A]"></div>
         </div>
         <div className="flex  items-center gap-3">
           <h1>Total Donation</h1>
-          <div className="h-3 w-10 bg-[#FF444A]"></div>
+          <div className="h-3 w-10 bg-[#8884D8]"></div>
         </div>
       </div>
     </div>
