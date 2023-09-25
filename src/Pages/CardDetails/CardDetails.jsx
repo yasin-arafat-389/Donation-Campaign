@@ -1,6 +1,24 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 const CardDetails = () => {
+  let handleSaveToLocalStorage = (donate) => {
+    const saveToLocalDb = [];
+
+    const myDonates = JSON.parse(localStorage.getItem("donates"));
+
+    //jokhon kisu nai tokhon e if vitor dhukba
+    if (!myDonates) {
+      saveToLocalDb.push(donate);
+      localStorage.setItem("donates", JSON.stringify(saveToLocalDb));
+      swal("Good job!", "You clicked the button!", "success");
+    } else {
+      saveToLocalDb.push(...myDonates, donate);
+      localStorage.setItem("donates", JSON.stringify(saveToLocalDb));
+      swal("Great job!", "Thanks for your donation", "success");
+    }
+  };
+
   let data = useLoaderData();
   let { id } = useParams();
 
@@ -12,10 +30,11 @@ const CardDetails = () => {
         <img className="w-full" src={filteredData.image} alt="" />
         <div className=" bg-[#0b0b0b80] relative bottom-[90px]  ">
           <button
+            onClick={() => handleSaveToLocalStorage(filteredData)}
             className="btn border-0 text-[#fff]  m-[20px] rounded-lg"
-            style={{ background: filteredData.donate_button_color }}
+            style={{ background: filteredData.category_title_color }}
           >
-            Donate $290
+            Donate ${filteredData.donate}
           </button>
         </div>
       </div>

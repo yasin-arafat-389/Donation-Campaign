@@ -6,9 +6,10 @@
     "title": "Support Medical Research",
     "description": "Donate to fund critical medical research projects aimed at finding cures for diseases, advancing medical technology, and improving healthcare worldwide.",
     "category_bg_color": "#0052ff33",
-    "category_title_color": "0052FF",
+    "category_title_color": "#0052FF",
     "category_card_bg_color": "#0052ff26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 400
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "category_bg_color": "#ff444a33",
     "category_title_color": "#FF444A",
     "category_card_bg_color": "#ff444a26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 500
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "category_bg_color": "#f8714733",
     "category_title_color": "#F87147",
     "category_card_bg_color": "#f8714726",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 150
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "category_bg_color": "#79c23f33",
     "category_title_color": "#79C23F",
     "category_card_bg_color": "#79c23f26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 259
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "category_bg_color": "#ff444a33",
     "category_title_color": "#FF444A",
     "category_card_bg_color": "#ff444a26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 300
   },
   {
     "id": 6,
@@ -61,9 +66,10 @@
     "title": "Support Pediatric Care",
     "description": "Help children receive the medical care they need by donating to pediatric healthcare programs and hospitals, ensuring a healthier future for our youngest generation.",
     "category_bg_color": "#0052ff33",
-    "category_title_color": "0052FF",
+    "category_title_color": "#0052FF",
     "category_card_bg_color": "#0052ff26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 400
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "category_bg_color": "#79c23f33",
     "category_title_color": "#79C23F",
     "category_card_bg_color": "#79c23f26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 120
   },
   {
     "id": 8,
@@ -83,9 +90,10 @@
     "title": "Support Mental Health",
     "description": "Donate to mental health organizations and initiatives working to raise awareness, provide counseling services, and create a stigma-free environment for those in need.",
     "category_bg_color": "#0052ff33",
-    "category_title_color": "0052FF",
+    "category_title_color": "#0052FF",
     "category_card_bg_color": "#0052ff26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 450
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "category_bg_color": "#f8714733",
     "category_title_color": "#F87147",
     "category_card_bg_color": "#f8714726",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 520
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "category_bg_color": "#ff444a33",
     "category_title_color": "#FF444A",
     "category_card_bg_color": "#ff444a26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 50
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "category_bg_color": "#79c23f33",
     "category_title_color": "#79C23F",
     "category_card_bg_color": "#79c23f26",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 500
   },
   {
     "id": 12,
@@ -129,6 +140,7 @@
     "category_bg_color": "#f8714733",
     "category_title_color": "#F87147",
     "category_card_bg_color": "#f8714726",
-    "donate_button_color": "#FF444A"
+    "donate_button_color": "#FF444A",
+    "donate": 250
   }
 ]
