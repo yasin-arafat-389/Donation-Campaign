@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         loader: () => fetch("../Data.json"),
       },
       {
-        path: "/details/:id",
+        path: "/details/:donationId",
         element: <CardDetails />,
         loader: () => fetch("../Data.json"),
       },

@@ -61,7 +61,11 @@ const Statistics = () => {
 
   return (
     <div>
-      <ResponsiveContainer width="100%" height={500}>
+      <ResponsiveContainer
+        width="100%"
+        height={500}
+        className="mt-15 md:mt-10 lg:mt-10"
+      >
         <PieChart width={1200} className="mx-auto">
           <Pie
             data={pieData}
@@ -84,16 +88,18 @@ const Statistics = () => {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
-      <div className="yourDonation text-center flex justify-center gap-12">
-        <div className="flex  items-center gap-3">
-          <h1>Your Donation</h1>
-          <div className="h-3 w-10 bg-[#FF444A]"></div>
+      {data?.length > 0 && (
+        <div className="yourDonation text-center flex justify-center gap-12">
+          <div className="flex  items-center gap-3">
+            <h1>Your Donation</h1>
+            <div className="h-3 w-10 bg-[#FF444A]"></div>
+          </div>
+          <div className="flex  items-center gap-3">
+            <h1>Total Donation</h1>
+            <div className="h-3 w-10 bg-[#00C49F]"></div>
+          </div>
         </div>
-        <div className="flex  items-center gap-3">
-          <h1>Total Donation</h1>
-          <div className="h-3 w-10 bg-[#8884D8]"></div>
-        </div>
-      </div>
+      )}
     </div>
   );
 };

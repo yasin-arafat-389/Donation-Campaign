@@ -23,19 +23,20 @@ const Banner = () => {
     <>
       <div>
         <div
-          className="hero h-[300px] md:h-[300px] lg:h-[500px] "
+          className="hero h-[300px] md:h-[300px] lg:h-[500px]  "
           style={{
-            backgroundImage: "url(https://i.ibb.co/6YBr5TY/Banner.jpg)",
+            backgroundImage:
+              "url(https://i.ibb.co/1dXvTkK/donation-banner.png)",
           }}
         >
-          <div className="hero-overlay bg-opacity-90"></div>
+          <div className="hero-overlay bg-opacity-80"></div>
           <div className="hero-content text-center text-neutral-content">
             <div>
-              <h1 className="mb-5 text-5xl font-bold opacity-100 text-[40px]">
+              <h1 className="mb-5 text-5xl font-bold opacity-100 text-[30px] md:text-[30px] lg:text-[40px]">
                 I Grow By Helping People In Need
               </h1>
               <form onSubmit={handleSubmit}>
-                <div className="searchBar mt-[60px]">
+                <div className="searchBar mt-[30px] md:mt-[40px] lg:mt-[60px]">
                   <div className="join ">
                     <input
                       type="text"

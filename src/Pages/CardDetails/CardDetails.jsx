@@ -2,12 +2,15 @@ import { useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 const CardDetails = () => {
+  let data = useLoaderData();
+
+  let { donationId } = useParams();
+
   let handleSaveToLocalStorage = (donate) => {
     const saveToLocalDb = [];
 
     const myDonates = JSON.parse(localStorage.getItem("donates"));
 
-    //jokhon kisu nai tokhon e if vitor dhukba
     if (!myDonates) {
       saveToLocalDb.push(donate);
       localStorage.setItem("donates", JSON.stringify(saveToLocalDb));
@@ -19,15 +22,12 @@ const CardDetails = () => {
     }
   };
 
-  let data = useLoaderData();
-  let { id } = useParams();
-
-  let filteredData = data.find((ago) => ago.id === parseInt(id));
+  let filteredData = data.find((ago) => ago.id === parseInt(donationId));
 
   return (
     <div className="w-[80%] mx-auto mt-10 mb-11">
       <div className="w-[100%] md:w-[70%] lg:w-[70%] mx-auto">
-        <img className="w-full" src={filteredData.image} alt="" />
+        <img className="w-full h-[400px]" src={filteredData.image} alt="" />
         <div className=" bg-[#0b0b0b80] relative bottom-[90px]  ">
           <button
             onClick={() => handleSaveToLocalStorage(filteredData)}
@@ -38,7 +38,7 @@ const CardDetails = () => {
           </button>
         </div>
       </div>
-      <h1 className="w-[70%] mx-auto mt-[-60px] text-[#0B0B0B] text-[25px] md:text-[40px] lg:text-[40px] font-bold ">
+      <h1 className="w-[70%] mx-auto mt-[-60px] text-[#0B0B0B] text-[20px] md:text-[30px] lg:text-[40px] font-bold ">
         {filteredData.title}
       </h1>
 
