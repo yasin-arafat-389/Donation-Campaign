@@ -12,20 +12,16 @@ const Statistics = () => {
 
   let grandTotalDonation = useLoaderData();
 
-  const grandTotal = grandTotalDonation?.reduce(
-    (preValue, currentItem) => preValue + currentItem.donate,
-    0
-  );
-  const total = data?.reduce(
-    (preValue, currentItem) => preValue + currentItem.donate,
-    0
-  );
+  let grandTotalExistingDonation = grandTotalDonation?.length;
+  let myTotalDonation = data?.length;
+
+  let percentage = myTotalDonation;
 
   const pieData = [
-    { name: "My Total Donation", value: total },
+    { name: "My Total Donation", value: percentage },
     {
       name: "Grand Total Donation",
-      value: grandTotal - total,
+      value: grandTotalExistingDonation - percentage,
     },
   ];
 
