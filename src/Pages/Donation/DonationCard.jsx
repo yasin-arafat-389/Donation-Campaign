@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Card, CardBody, CardHeader } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const DonationCard = ({ item }) => {
   return (
@@ -43,12 +44,14 @@ const DonationCard = ({ item }) => {
             ${item.donate}
           </p>
 
-          <button
-            className="btn border-0 text-[#fff] rounded-lg"
-            style={{ background: item.category_title_color }}
-          >
-            View Details
-          </button>
+          <Link to={`/details/${item.id}`}>
+            <button
+              className="btn border-0 text-[#fff] rounded-lg"
+              style={{ background: item.category_title_color }}
+            >
+              View Details
+            </button>
+          </Link>
         </CardBody>
       </Card>
     </div>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Card from "./../Card/Card";
 import DonationData from "../../Hooks/DonationData";
-import { Link } from "react-router-dom";
 
 const Banner = () => {
   const [inputValue, setInputValue] = useState("");
@@ -62,15 +61,9 @@ const Banner = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  w-[90%] mx-auto mt-[50px] mb-20 gap-10">
         {searchedDonations.length > 0
           ? searchedDonations.map((item, index) => (
-              <Link to={`/details/${item.id}`} key={index}>
-                <Card item={item} />
-              </Link>
+              <Card item={item} key={index} />
             ))
-          : donation.map((item, index) => (
-              <Link to={`/details/${item.id}`} key={index}>
-                <Card item={item} />
-              </Link>
-            ))}
+          : donation.map((item, index) => <Card item={item} key={index} />)}
       </div>
     </>
   );
