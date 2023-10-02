@@ -42,7 +42,7 @@ const Banner = () => {
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       className="input rounded-lg join-item text-[#000]"
-                      placeholder="Search Here....."
+                      placeholder="Search By Category....."
                     />
                     <button
                       type="submit"

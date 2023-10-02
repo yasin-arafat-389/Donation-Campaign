@@ -5,6 +5,9 @@ import Donation from "../Pages/Donation/Donation";
 import CardDetails from "../Pages/CardDetails/CardDetails";
 import Statistics from "../Pages/Statistics/Statistics";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Login from "../Pages/Login/Login";
+import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
+import Profile from "../Pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -18,17 +21,38 @@ const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <Donation />,
+        element: (
+          <PrivateRoute>
+            <Donation />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/statistics",
-        element: <Statistics />,
+        element: (
+          <PrivateRoute>
+            <Statistics />
+          </PrivateRoute>
+        ),
         loader: () => fetch("../Data.json"),
       },
       {
         path: "/details/:donationId",
         element: <CardDetails />,
         loader: () => fetch("../Data.json"),
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

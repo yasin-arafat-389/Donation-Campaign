@@ -1,9 +1,22 @@
 /* eslint-disable react/prop-types */
 
+import { useContext } from "react";
+import { authContext } from "../../Contexts/AuthContext";
 import swal from "sweetalert";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const CardDetailsLayout = ({ filteredData }) => {
+  let { user } = useContext(authContext);
+  let navigate = useNavigate();
+
   let handleSaveToLocalStorage = (donate) => {
+    if (!user?.displayName) {
+      toast.error("You must login first to make donation");
+      navigate("/login");
+      return;
+    }
+
     const saveToLocalDb = [];
 
     const myDonates = JSON.parse(localStorage.getItem("donates"));
