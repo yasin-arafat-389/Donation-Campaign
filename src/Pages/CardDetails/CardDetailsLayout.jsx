@@ -7,13 +7,14 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const CardDetailsLayout = ({ filteredData }) => {
-  let { user } = useContext(authContext);
+  let { user, setProgress } = useContext(authContext);
   let navigate = useNavigate();
 
   let handleSaveToLocalStorage = (donate) => {
     if (!user?.displayName) {
       toast.error("You must login first to make donation");
       navigate("/login");
+      setProgress(100);
       return;
     }
 

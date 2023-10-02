@@ -9,8 +9,7 @@ const Login = () => {
 
   let handleLogin = () => {
     googleSignIn()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
         navigate("/profile");
         toast.success("Successfully Logged In!");
       })

@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { authContext } from "../../Contexts/AuthContext";
 
 const Card = ({ item }) => {
+  let { setProgress } = useContext(authContext);
   return (
     <div className="card shadow-xl ">
       <figure>
@@ -32,7 +35,7 @@ const Card = ({ item }) => {
         >
           {item.title}
         </h2>
-        <Link to={`/details/${item.id}`}>
+        <Link to={`/details/${item.id}`} onClick={() => setProgress(100)}>
           <button
             className="btn btn-md"
             style={{
