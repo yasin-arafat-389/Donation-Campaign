@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { authContext } from "../../Contexts/AuthContext";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import LoadingBar from "react-top-loading-bar";
 
 const PrivateRoute = ({ children }) => {
   const { user, loading, progress, setProgress } = useContext(authContext);
+  let location = useLocation();
 
   if (loading)
     return (
@@ -20,9 +21,8 @@ const PrivateRoute = ({ children }) => {
   if (!user) {
     toast.error("You must login first");
     setProgress(100);
-    return <Navigate to="/login" />;
+    return <Navigate state={location.pathname} to="/login" />;
   }
-
   return <div>{children}</div>;
 };
 
