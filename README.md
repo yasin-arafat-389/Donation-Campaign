@@ -1,3 +1,8 @@
+# About Project
+
+- Project name:- Donation Campaign
+- [Project live URL](https://donation-campaign-389.surge.sh/)
+
 # Features
 
 - Can see donation details on clicking the card in the homepage.
